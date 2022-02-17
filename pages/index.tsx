@@ -11,7 +11,7 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <h1>Hello Next.js!</h1>
+        <h1 className="text-5xl font-bold">Hello world!</h1>
       </main>
     </div>
   );
