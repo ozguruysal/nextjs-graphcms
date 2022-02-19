@@ -31,9 +31,28 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: [
+          "Inter",
+          "ui-sans-serif",
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "Helvetica Neue",
+          "Arial",
+          "Noto Sans",
+          "sans-serif",
+          "Apple Color Emoji",
+          "Segoe UI Emoji",
+          "Segoe UI Symbol",
+          "Noto Color Emoji",
+        ],
+      },
       boxShadow: {
-        md: "0 1.63px 6.52px 0 rgba(5, 12, 44, 0.5)"
-      }
+        md: "0 1.63px 6.52px 0 rgba(5, 12, 44, 0.5)",
+      },
     },
   },
   plugins: [],
