@@ -2,7 +2,7 @@ import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import { CreatorCard, MainLayout } from "../components";
 import { client } from "../lib/graphcms-client";
-import { CREATORS } from "../lib/queries";
+import { allCreatorsQuery } from "../lib/queries";
 import type { Creator } from "../types";
 
 type Props = {
@@ -10,7 +10,7 @@ type Props = {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-  const data = await client.request(CREATORS);
+  const data = await client.request(allCreatorsQuery);
 
   return {
     props: {
@@ -29,7 +29,7 @@ const Home: NextPage<Props> = ({ creators }) => {
       </Head>
 
       <MainLayout>
-        <h1 className="text-4xl font-bold">Creators</h1>
+        <h1 className="text-4xl font-bold">Popular creators</h1>
 
         <div className="mt-8 grid sm:grid-cols-2 md:grid-cols-3 gap-8">
           {creators.map((creator) => (
