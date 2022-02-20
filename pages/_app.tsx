@@ -5,7 +5,10 @@ import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
-    splitbee.init();
+    splitbee.init({
+      scriptUrl: "/bee.js",
+      apiUrl: "/_hive",
+    });
   }, []);
 
   return <Component {...pageProps} />;
