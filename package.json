@@ -1,7 +1,10 @@
 {
-  "name": "my-app",
+  "name": "creators-app",
   "version": "0.1.0",
+  "description": "An experimental project using Next.js and GraphCMS",
   "private": true,
+  "author": "Özgür Uysal",
+  "repository": "https://github.com/ozguruysal/nextjs-graphcms.git",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

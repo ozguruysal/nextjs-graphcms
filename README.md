@@ -1,13 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Creators App
 
-## Getting Started
+An experimental project using [Next.js](https://nextjs.org/) and [GraphCMS](https://graphcms.com/)
 
-First, run the development server:
+[Demo](http://nextjs-graphcms-taupe.vercel.app/)
 
-```bash
+## Setup & Development
+
+**Install dependencies**
+```
+npm ci
+```
+
+**Start development**
+```
 npm run dev
-# or
-yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
